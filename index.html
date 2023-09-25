@@ -5,27 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Calculator App</title>
     <script src="calc.js" defer></script>
+    <link rel="stylesheet" href="myStyle.css" />
   </head>
   <body>
     <div class="container">
       <div class="output"></div>
       <div class="buttons">
-        <button class="number">7</button>
-        <button class="number">8</button>
-        <button class="number">9</button>
-        <button class="number">/</button>
-        <button class="number">4</button>
-        <button class="number">5</button>
-        <button class="number">6</button>
-        <button class="number">*</button>
-        <button class="number">1</button>
-        <button class="number">2</button>
-        <button class="number">3</button>
-        <button class="number">-</button>
-        <button class="number">0</button>
-        <button class="number">.</button>
-        <button class="number">C</button>
-        <button class="number">+</button>
+        <div class="buttons-container">
+          <button class="number7" data-value="7">7</button>
+          <button class="number8" data-value="8">8</button>
+          <button class="number9" data-value="9">9</button>
+          <button class="divide">/</button>
+        </div>
+        <div class="buttons-container">
+          <button class="number4" data-value="4">4</button>
+          <button class="number5" data-value="5">5</button>
+          <button class="number6" data-value="6">6</button>
+          <button class="multiply">*</button>
+        </div>
+        <div class="buttons-container">
+          <button class="number1" data-value="1">1</button>
+          <button class="number2" data-value="2">2</button>
+          <button class="number3" data-value="3">3</button>
+          <button class="subtract">-</button>
+        </div>
+        <div class="buttons-container">
+          <button class="number0" data-value="0">0</button>
+          <button class="decimal">.</button>
+          <button class="clear">C</button>
+          <button class="add">+</button>
+        </div>
       </div>
       <button class="result">=</button>
     </div>
